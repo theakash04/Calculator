@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trip Sans Mono';
+}
+body{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #3e3d64;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 40px 10px;
+  justify-content: center;
+}
+.app-container{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: clamp(290px,100%, 400px);
+  height: 90%;
+  border-radius: 5px;
+}
+
+.head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.head span{
+  font-family: 'Trip Sans Ultra';
+  font-size: 30px;
+}
+.head p{
+  font-family: 'Trip Sans Ultra';
+  font-size: 1.1rem;
+  background-color: green;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+
+.output{
+  background-color: #1a1832;
+  width: 100%;
+  min-height: 80px;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 10px 20px;
+  font-family: 'Trip Sans';
+  font-weight: 600;
+}
+.output{
+  box-shadow: 2px 4px 5px #050505;
+}
+.prev{
+  color: rgba(217, 217, 217, 0.568);
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.output .current{
+  padding: 5px 0;
+  display: flex;
+  color: #ececec;
+  word-break: break-all;
+}
+.input-section{
+  width: 100%;
+  height: 100%;
+  background-color: #1a1832;
+  margin-top: 20px;
+  padding: 15px;
+  display: grid;
+}
+.input-section .inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.inputs .nums{
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.inputs .operators{
+  width: 40%;
+  gap: 10px;
+  display: grid;
+}
+.nums button{
+  font-weight: 600;
+  padding: 15px 35px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+}
+.operators button{
+  font-weight: 600;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+}
+.operators button:first-child{
+  background-color: rgb(198, 0, 0);
+  color: #fff;
+}
+.ex-btn{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  padding-top: 10px;
+}
+.ex-btn button{
+  border-radius: 5px;
+  border: none;
+  padding: 10px 0; 
+  transition: opacity 0.15s ease-in-out;
+}
+.ex-btn button:first-child{
+  flex: 1;
+  background-color: #3e3d64;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.ex-btn button:last-child{
+  flex: 0.5;
+  font-size: 1.4rem;
+  background-color: green;
+  color: #fff;
+  font-weight: 600;
+}
+button:hover, button:active{
+  opacity: 0.8;
+}
+
+button{
+  cursor: pointer;
+}
+
+.github{
+  position: absolute;
+  text-decoration: none;
+  color: #ececec;
+  top: 20px;
+  background-color: #1a1832;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.github i{
+  font-size: 1.5rem;
+}
+.github span{
+  font-size: 1.3rem;
+  font-family: 'Trip Sans';
+  font-weight: 700;
+}
